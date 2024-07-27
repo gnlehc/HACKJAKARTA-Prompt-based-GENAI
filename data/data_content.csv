@@ -1,0 +1,31 @@
+category,distance,duration,nearby_places,title,url,p_rating,count,itemId
+Wildlife,10 Kms,2-3 Hours,None,Ragunan Zoo,/indonesia/jakarta/ragunan-zoo,4.3,250,1
+Heritage,5 Kms,1-2 Hours,None,Kota Tua,/indonesia/jakarta/kota-tua,4.5,500,2
+Heritage,7 Kms,2-3 Hours,"Fatahillah Museum (0.5 km), Wayang Museum (0.5 km), Bank Indonesia Museum (0.5 km)",Sunda Kelapa Harbor,/indonesia/jakarta/sunda-kelapa-harbor,4.8,300,3
+Pilgrimage,4 Kms,1-2 Hours,None,Istiqlal Mosque,/indonesia/jakarta/istiqlal-mosque,4.9,700,4
+Heritage,5 Kms,30 Mins,None,National Monument,/indonesia/jakarta/national-monument,4.2,800,5
+Heritage,6 Kms,1 Hour,None,Museum Nasional,/indonesia/jakarta/museum-nasional,4.1,600,6
+Pilgrimage,7 Kms,1 Hour,None,Pura Aditya Jaya,/indonesia/jakarta/pura-aditya-jaya,4.3,350,7
+Park,10 Kms,1 Hour,None,Taman Mini Indonesia Indah,/indonesia/jakarta/taman-mini-indonesia-indah,4.0,450,8
+Heritage,6 Kms,1-2 Hours,"Jakarta History Museum (0.5 km), Museum Wayang (0.5 km), Fine Arts and Ceramics Museum (0.5 km)",Jakarta Textile Museum,/indonesia/jakarta/jakarta-textile-museum,4.2,200,9
+Pilgrimage,8 Kms,1-2 Hours,None,Masjid Al-Azhar,/indonesia/jakarta/masjid-al-azhar,4.5,320,10
+Heritage,6 Kms,30 Mins,None,Museum Wayang,/indonesia/jakarta/museum-wayang,4.7,150,11
+Heritage,5 Kms,1 Hour,This is UNESCO World Heritage Site,Fine Arts and Ceramics Museum,/indonesia/jakarta/fine-arts-ceramics-museum,4.1,400,12
+Pilgrimage,9 Kms,1-2 Hours,None,Masjid Agung Sunda Kelapa,/indonesia/jakarta/masjid-agung-sunda-kelapa,4.3,500,13
+Heritage,7 Kms,1-2 Hours,None,Museum Bank Mandiri,/indonesia/jakarta/museum-bank-mandiri,4.0,250,14
+Pilgrimage,6 Kms,1 Hour,None,Gereja Katedral Jakarta,/indonesia/jakarta/gereja-katedral-jakarta,4.6,280,15
+Park,5 Kms,1 Hour,None,Taman Suropati,/indonesia/jakarta/taman-suropati,4.3,400,16
+Heritage,10 Kms,1 Hour,"Pura Aditya Jaya (1 km), Jakarta Cathedral (1 km)",Istiqlal Mosque,/indonesia/jakarta/istiqlal-mosque,4.9,700,17
+Heritage,4 Kms,1 Hour,"This is currently a public museum with a beautiful garden.",Museum Nasional,/indonesia/jakarta/museum-nasional,4.4,600,18
+Park,8 Kms,1-2 Hours,None,Taman Menteng,/indonesia/jakarta/taman-menteng,4.0,320,19
+Heritage,12 Kms,1-2 Hours,"National Monument (1 km), Istiqlal Mosque (1 km)",Jakarta Cathedral,/indonesia/jakarta/jakarta-cathedral,4.6,480,20
+Park,7 Kms,1-2 Hours,None,Taman Fatahillah,/indonesia/jakarta/taman-fatahillah,4.1,150,21
+Heritage,9 Kms,1 Hour,None,Museum of Fine Arts and Ceramics,/indonesia/jakarta/museum-of-fine-arts-ceramics,4.2,200,22
+Heritage,6 Kms,30 Mins,None,Statue of Prince Diponegoro,/indonesia/jakarta/statue-of-prince-diponegoro,4.5,60,23
+Pilgrimage,14 Kms,2 Hours,None,Vihara Dharma Bhakti,/indonesia/jakarta/vihara-dharma-bhakti,4.0,320,24
+Heritage,30 Kms,4 Hours/Half Day,None,Taman Mini Indonesia Indah,/indonesia/jakarta/taman-mini-indonesia-indah,4.5,1000,25
+Heritage,5 Kms,15 Mins or Less,None,Amar Jawan Jyoti,/indonesia/jakarta/amar-jawan-jyoti,4.5,300,26
+Heritage,10 Kms,1-2 Hours,None,Jakarta History Museum,/indonesia/jakarta/jakarta-history-museum,4.4,600,27
+Museum,8 Kms,2 Hours,None,Museum Bank Indonesia,/indonesia/jakarta/museum-bank-indonesia,4.5,750,28
+Heritage,6 Kms,30 Mins,None,Jakarta Planetarium,/indonesia/jakarta/jakarta-planetarium,4.3,320,29
+Pilgrimage,12 Kms,2 Hours,None,Ancol Dreamland,/indonesia/jakarta/ancol-dreamland,4.6,870,30
