@@ -8,7 +8,6 @@ from dotenv import dotenv_values, load_dotenv
 
 app = Flask(__name__)
 
-# Set your OpenAI and Google Maps API keys here
 config = dotenv_values(".env")
 print(config)
 load_dotenv()

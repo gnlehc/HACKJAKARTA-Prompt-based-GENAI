@@ -21,11 +21,9 @@ def categorize_prompt(user_prompt, category_keywords):
                 return category
     return "Category not available"
 
-# Example CSV path
 category_csv_path = './data/flask_datasets/categories.csv'
 category_keywords = load_categories(category_csv_path)
 
-# Test user prompts
 test_prompts = [
     "Find a nice restaurant with a barbecue menu.",
     "Looking for a family-friendly place with activities for kids.",

@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup as bs
 import pandas as pd
 import random
 
-# Example working proxy
 proxies = [
     'http://135.148.233.152:3129',
     'http://72.10.160.94:18345',
@@ -38,7 +37,6 @@ def parse_attractions(content):
     reviews = []
     categories = []
 
-    # Modify selectors as needed based on updated page structure
     for item in bsobj.find_all('div', {'class': 'XfVdV o YQJrd'}):
         places.append(item.text.strip())
 
@@ -55,20 +53,15 @@ def parse_attractions(content):
 
     return places, ratings, reviews, categories
 
-# URL of TripAdvisor page listing Jakarta attractions
 url = 'https://www.tripadvisor.com/Attractions-g294229-Activities-Jakarta_Java.html'
 
-# Get page content
 page_content = get_page(url)
 if page_content:
-    # Parse the data
     places, ratings, reviews, categories = parse_attractions(page_content)
 
-    # Create DataFrame
     data = {'Place': places, 'Ratings': ratings, 'Number of Reviews': reviews, 'Category': categories}
     df = pd.DataFrame(data)
 
-    # Save to CSV
     df.to_csv('jakarta_attractions.csv', index=False)
     print("Data has been successfully scraped and saved to jakarta_attractions.csv")
 else:

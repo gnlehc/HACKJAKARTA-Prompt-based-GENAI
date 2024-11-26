@@ -5,7 +5,6 @@ import io
 
 app = Flask(__name__)
 
-# Set your OpenAI API key here
 openai.api_key = 'sk-proj-RaPQwENoFDL6ohssuHd6T3BlbkFJBMXifkXqdxRwp4iXFWHA'
 
 class ResponseFormatter:
@@ -97,17 +96,13 @@ def recommendations():
         return jsonify(formatter.format_response())
 
     try:
-        # Load CSV data from string
         users_df = pd.read_csv(io.StringIO(prompt_csv))
         locations_df = pd.read_csv(io.StringIO(user_data_csv))
         
-        # Load category keywords from CSV
         category_keywords = load_categories(category_csv_path)
 
-        # Debugging: Print loaded category keywords
         print("Category Keywords:", category_keywords)
         
-        # Merge users and locations data
         merged_df = pd.merge(users_df, locations_df, on='user_id')
         
         structured_recommendations = []
@@ -119,12 +114,10 @@ def recommendations():
             longitude = row['longitude']
             user_prompt = row.get('user_prompt', '')
             
-            # Debugging: Print user prompt
             print("User Prompt:", user_prompt)
             
             category = categorize_prompt(user_prompt, category_keywords)
             
-            # Debugging: Print categorized category
             print("Categorized Category:", category)
             
             recommendations_text = recommend_attractions(user_id, location_name, latitude, longitude, user_prompt)
@@ -132,7 +125,6 @@ def recommendations():
             structured_recommendations_for_user = []
             lines = recommendations_text.split('\n')
             
-            # Initialize rank counter
             rank = 1
             
             for line in lines:
@@ -140,7 +132,6 @@ def recommendations():
                 
                 if line and not line.startswith("These recommendations"):
                     if line.startswith(f"{rank}. "):
-                        # Extract name and description
                         content = line[len(f"{rank}. "):].strip()
                         description_index = content.find(" - ")
                         if description_index != -1:

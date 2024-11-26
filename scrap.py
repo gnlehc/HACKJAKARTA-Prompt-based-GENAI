@@ -16,10 +16,8 @@ def get_attractions(url):
     
     attractions = []
     
-    # Print the page content to inspect structure
     print(soup.prettify())
     
-    # Find all the attraction containers (adjust selectors based on actual HTML structure)
     for item in soup.find_all('div', class_='css-1p6a9px'):
         title = item.find('a', class_='css-1n4w9b1').get_text(strip=True) if item.find('a', class_='css-1n4w9b1') else 'No title'
         rating = item.find('span', class_='css-1h1j0y3').get_text(strip=True) if item.find('span', class_='css-1h1j0y3') else 'No rating'
@@ -33,18 +31,13 @@ def get_attractions(url):
     
     return attractions
 
-# URL of TripAdvisor page listing Jakarta attractions
 url = 'https://www.tripadvisor.com/Attractions-g294229-Activities-Jakarta_Java.html'
 
-# Scrape the data
 attractions_data = get_attractions(url)
 
-# Check if data is being retrieved
 if attractions_data:
-    # Convert to DataFrame
     df = pd.DataFrame(attractions_data)
 
-    # Save to CSV
     df.to_csv('jakarta_attractions.csv', index=False)
     print("Data has been successfully scraped and saved to jakarta_attractions.csv")
 else:
